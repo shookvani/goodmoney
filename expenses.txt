@@ -1,0 +1,4 @@
+education, 108.1273
+food & grocery, 101.238
+water, 30.261
+taxes, 59.2738

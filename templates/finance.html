@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>GoodMoney - Wallet Page</title>
+ 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/apexcharts.css" rel="stylesheet">
+
+        <link href="static/tooplate-mini-finance.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <header class="navbar sticky-top flex-md-nowrap">
+            <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+                <a class="navbar-brand" href="/">
+                    <i class="bi-box"></i>
+                    Mini Finance
+                </a>
+            </div>
+
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#" method="get" role="form">
+                <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+            </form>
+
+            <div class="navbar-nav me-lg-2">
+                <div class="nav-item text-nowrap d-flex align-items-center">
+                    
+
+                    <div class="dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="static/images/Default_pfp.svg.png" class="profile-image img-fluid" alt="">
+                        </a>
+                        <ul class="dropdown-menu bg-white shadow">
+                            <li>
+                                <div class="dropdown-menu-profile-thumb d-flex">
+                                    <img src="static/images/Default_pfp.svg.png" class="profile-image img-fluid me-3" alt="">
+
+                                    <div class="d-flex flex-column">
+                                        <small>John</small>
+                                        <a href="#">John@email.com</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="/profile">
+                                    <i class="bi-person me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="/setting">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="/help">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help
+                                </a>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+                    <div class="position-sticky py-4 px-3 sidebar-sticky">
+                        <ul class="nav flex-column h-100">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">
+                                    <i class="bi-house-fill me-2"></i>
+                                    Overview
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/wallet">
+                                    <i class="bi-wallet me-2"></i>
+                                    My Wallet
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/finance">
+                                    <i class="bi-cash me-2"></i>
+                                    Savings Calculator
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profile">
+                                    <i class="bi-person me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/setting">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/help">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help Center
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                    <div class="title-group mb-3">
+                        <h1 class="h2 mb-0">Wallet</h1>
+                    </div>
+                        <div class="row my-4">
+                        
+                        </div>
+                        <div class="row">
+                        <div class="col-lg-7 col-12">
+                            <div class="custom-block custom-block-balance">
+                                <small>Your Predicted Balance</small>
+
+                                <h2 class="mt-2 mb-3">{{profit}}</h2>
+
+
+                                <div class="d-flex">
+                                    <div>
+                                        <small>Today's Date</small>
+                                        <p>07/08/2023</p>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>Business</small>
+                                        <p>John's Business</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-bottom d-flex flex-wrap">
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-envelope-plus"></i>
+
+                                        <small>Report Income</small>
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-envelope-dash"></i>
+
+                                        <small>Report Expenses</small>
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-cash-coin"></i>
+
+                                        <small>Report Deductions</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                        <div class="custom-block custom-block-transations">
+                                <h5 class="mb-4">Reports</h5>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/static/images/profile/senior-man-white-sweater-eyeglasses.jpg" class="profile-image img-fluid" alt="">
+
+                                        <div>
+                                            <p>
+                                                <a href="/transaction">Predicted Earnings</a>
+                                            </p>
+
+                                            <small class="text-muted">Savings Account</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>07/08/2023</small>
+                                        <strong class="d-block text-success"><span class="me-1">+</span> {{profit}}</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/static/images/profile/young-beautiful-woman-pink-warm-sweater.jpg" class="profile-image img-fluid" alt="">
+
+                                        <div>
+                                            <p>
+                                                <a href="/transaction">Predicted Expenses</a>
+                                            </p>
+
+                                            <small class="text-muted">General</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>24/6/2023</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span> {{expenses}}</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/static/images/profile/young-woman-with-round-glasses-yellow-sweater.jpg" class="profile-image img-fluid" alt="">
+
+                                        <div>
+                                            <p><a href="/transaction">Predicted Deductions</a></p>
+
+                                            <small class="text-muted">Charitables & Bonuses</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>28/6/2023</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span> {{deduction}}</strong>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-4">Account Activities</h5>
+                                <div class="modal-body row">
+                                <div class="col-lg-6 col-12 text-center"><p>Enter in your vakues and we will provide an estimate of your taxes.<br> Did you know that by giving a tax deductible donation you can help out a charity of your choice and pay elss taxes to the government? You can also do this by giving your employees a bonus. This can provide a much needed break for your employees, and also save you on taxes.</p></div>
+                                <div class="col-lg-6 col-12">
+
+                                  
+ <form action="/finance">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+                                      </div>
+                                </div>
+                                </div>
+                        
+
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT FILES -->
+                <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.bundle.min.js"></script>
+        <script src="static/apexcharts.min.js"></script>
+        <script src="static/custom.js"></script>     
+    </body>
+</html>

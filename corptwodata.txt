@@ -1,0 +1,5 @@
+revenue: 103000.2354
+expenses: 50050.346
+option: charity
+deductable: 7598.45678
+wage bonus: 0

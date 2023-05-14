@@ -1,0 +1,5 @@
+additional revenue: 207.235
+additional expenses: 72.532
+option: charity
+additional deductable: 64.234
+additional wage bonus: 56.4567

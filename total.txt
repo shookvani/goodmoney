@@ -1,0 +1,4 @@
+cash, 90
+bank, 201.7324
+stocks, 4.234
+bonds, 67.238

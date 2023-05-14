@@ -1,0 +1,5 @@
+revenue: 1070.235
+expenses: 720.654
+option: employee
+deductable: 0
+wage bonus: 58.4567
