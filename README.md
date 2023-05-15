@@ -1,6 +1,6 @@
 # goodmoney
 
-This was a project that was submitted by Shivani Manikandan and Zander Silverman for the hackathon 'PantherHack 2023' which won 2nd place overall.
+ GoodMoney is a revolutionary app designed for sole proprietorship businesses to help them predict their profit data. The app is built on the principle that businesses can thrive financially while also making a positive impact on society and the environment. This was a project that was submitted by Shivani Manikandan and Zander Silverman for the hackathon 'PantherHack 2023' which won 2nd place overall.
 
 The devpost link can be found here: https://devpost.com/software/goodmoney
 
