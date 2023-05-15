@@ -13,11 +13,11 @@ We were inspired by our parents who work in the finance industry, and via the pr
 Simply: this is a project that takes corporate data in order to:
 
 
-calculate the current profit given revenue, expenses, wage bonuses, and more
+1. calculate the current profit given revenue, expenses, wage bonuses, and more
 
-calculate taxable money based on deductions
+2. calculate taxable money based on deductions
 
-predicts future profit given predicted revenue, expenses, etc.
+3. predicts future profit given predicted revenue, expenses, etc.
 
 
 More thoroughly: GoodMoney is a revolutionary app designed for sole proprietorship businesses to help them predict their profit data. The app is built on the principle that businesses can thrive financially while also making a positive impact on society and the environment.
